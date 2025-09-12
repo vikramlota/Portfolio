@@ -1,0 +1,32 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+/* Custom styles for glowing effects and gradients */
+.glow {
+    animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px -10px #2dd4bf, 0 0 20px -10px #2dd4bf, 0 0 30px -10px #2dd4bf;
+    }
+    to {
+        box-shadow: 0 0 5px 0px #2dd4bf, 0 0 10px 0px #2dd4bf, 0 0 15px 0px #2dd4bf;
+    }
+}
+.hero-gradient {
+    background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(34, 211, 238, 0.3), transparent);
+}
+.section-gradient {
+     background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(34, 211, 238, 0.05), transparent);
+}
+
+@keyframes openContainer {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
